@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+// header
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    border: 1px solid rgba(209, 201, 201, 0.89);
+    box-shadow: 5px 10px 18px rgba(147, 143, 143, 0.89);
+    background-color: rgb(245, 245, 245);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0.5rem 5.4rem;
+    font-size: large;
+  }
+
+  @media screen and (min-width: 420px) {
+  padding-top: 3rem;
+
+    img {
+      width: 32rem;
+    }
+
+    h1 {
+      width: max-content;
+      padding: 0.5rem 8.4rem;
+    }
+  }
+}
+
+// Middle
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .scoreDisplay {
+    background-color: rgb(245, 245, 245);
+    box-shadow: 5px 10px 18px rgba(209, 201, 201, 0.89);
+    width: 100%;
+    height: 11em;
+
+    .scoreBoard {
+      margin-left: 1.8em;
+      .scoreNumber {
+        margin: 0.5em 0em 0.2em 0em;
+        font-size: 1.5em;
+
+        span {
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: 2em;
+        }
+      }
+
+      p {
+        margin-bottom: 1em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1em;
+        color: rgb(91, 89, 89);
+      }
+
+      span.playingTo {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.8em;
+        margin-right: 0.4em;
+      }
+
+      select {
+        display: inline-block;
+        border-radius: 0.5em;
+        font-size: 1.5em;
+        border-color: rgb(49, 88, 88);
+      }
+    }
+    @media screen and (min-width: 420px) {
+      max-width: 32rem;
+    }
+  }
+}
+
+// Footer
+.container3 {
+  display: flex;
+  justify-content: center;
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .playerOneAdd,
+  .playerTwoAdd {
+    background-color: #00d1b2;
+    border-color: transparent;
+    border-radius: 0.2em;
+    color: #fff;
+    height: 2em;
+    font-size: 1.5em;
+    padding: 0em 0.4em;
+    margin: 0.1em 0.2em;
+  }
+
+  .playerTwoAdd {
+    background-color: #3298dc;
+  }
+
+  #reset {
+    background-color: #f14668;
+    border-color: transparent;
+    color: #fff;
+    border-radius: 0.2em;
+    color: #fff;
+    height: 2em;
+    font-size: 1.5em;
+    padding: 0em 0.5em;
+    margin-top: 0.1em;
+  }
+}
+
+// score colors to toggle styles using JavaScript
+.won {
+  color: green;
+}
+.lost {
+  color: red;
+}
+
+// .reset {
+//     color: black;
+// }
+
+.disabled {
+  // background-color: #d7dedb !important;
+  background-color: #E7E9EB!important;
+  color: rgb(125, 116, 116) !important;
+}
